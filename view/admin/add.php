@@ -2,7 +2,7 @@
   ob_start();
   
   ?>
-  <form action="<?=$_SERVER['PHP_SELF']?>" method="post" class="form-control">
+  <form action="../../controlleur/admin/ajouter_produit.php" method="post" class="form-control">
     <label for="">libelle</label>
     <input type="text" name="lib" id=""class="form-control"><br>
     <label for="">prix unitaire</label>
@@ -17,24 +17,10 @@
     <input type="text" name="pro" value="0" id=""class="form-control"><br>
     <input type="submit" value="ajouter" name="ok" class="btn btn-success btn-lg"></form>
   <?php
-   
-    if(isset($_POST['ok'])){
-    require_once "../classes/crud_produit.php";
-    
-    
-    $crud=new crud_produit();
-    $produit=new produit();
-    $res=$crud->add($produit);
-    }
-        
-        if($res)
-           echo"insertion réussite";
-        else
-           echo"problem insertion";
            $contenu=ob_get_clean();
         $titre="ajout d'un produit";
        
-        include "layout.php";
+        include "../../view/admin/layout.php";
     
 
     ?>

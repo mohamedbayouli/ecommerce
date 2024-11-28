@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-include "nav.php";?>
+include "../../view/nav.php";?>
     <div class="container mt-3">
 <h1>Liste de produits</h1>
 

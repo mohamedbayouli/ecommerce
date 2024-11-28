@@ -12,20 +12,23 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php">nos produits</a>
+          <a class="nav-link" href="../../controlleur/user/findall.php">nos produits</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">nos catégories</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">lister des commande des clients</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
        
       </ul>
       <ul class="navbar-nav me-left">
       
-      
-       
+      <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Panier</a>
+        </li>
+          <a class="nav-link" href="#"><i class="fas fa-user-plus"></i>Crier un compte</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fas fa-sign-in"></i>connexion</a>
         </li>
