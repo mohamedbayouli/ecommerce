@@ -14,11 +14,12 @@
         <li class="nav-item">
           <a class="nav-link" href="../../controlleur/admin/findall.php">nos produits</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="#">nos catégories</a>
+          <a class="nav-link" href="../../controlleur/admin/clients.php">liste des clients</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">lister des commande des clients</a>
+          <a class="nav-link" href="../../controlleur/admin/commande.php">lister des commande des clients</a>
         </li>
        
       </ul>
@@ -26,11 +27,9 @@
       
       
        
+        
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-sign-in"></i>connexion</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-sign-out"></i>déconnexion</a>
+          <a class="nav-link" href="../../controlleur/admin/deconnexion.php"><i class="fas fa-sign-out"></i>déconnexion</a>
         </li>
         
 </ul>

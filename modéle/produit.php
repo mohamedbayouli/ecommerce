@@ -11,8 +11,6 @@ class produit{
         $this->image=$image;
         $this->des=$des;
         $this->promo = $promo;
-     
-
     }
     
     

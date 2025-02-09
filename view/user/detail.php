@@ -1,11 +1,7 @@
 <?php
   ob_start();
-  
-    session_start();
-  
+  session_start();
 
-  if($_SESSION['privilege']!='admin')
-    header('location:../../');
   ?>
 <div class="row">
     <div class="col-6">

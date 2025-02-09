@@ -1,6 +1,8 @@
 <?php
   ob_start();
-  
+  session_start();
+  if($_SESSION['privilege']!='admin')
+    header('location:../../');
   ?>
   <form action="../../controlleur/admin/ajouter_produit.php" method="post" class="form-control">
     <label for="">libelle</label>

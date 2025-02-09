@@ -1,5 +1,7 @@
 <?php
 ob_start();
+session_start();
+  
 ?>
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat, esse sed facilis et nostrum at aut non necessitatibus mollitia expedita impedit, soluta quod obcaecati ad quidem! Eos, magnam velit.
 Libero, perspiciatis quasi reiciendis itaque magnam voluptatum doloribus totam quae numquam similique veritatis. Voluptatibus, iste incidunt rem aperiam libero veniam sint quod aliquid debitis nam! Aspernatur ratione alias quam voluptate.

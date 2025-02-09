@@ -1,6 +1,9 @@
 <?php
-ob_start();
-?>
+  ob_start();
+  session_start();
+  if(isset($_SESSION['privilege']) and $_SESSION['privilege']!='user' )
+    header('location:../../');
+  ?>
 <div class="row">
     <?php
     foreach ($Lesproduits as $produit) {
@@ -11,9 +14,10 @@ ob_start();
                 <div class="card-body">
                     <h1 class="card-title"><?= $produit[1] ?></h1>
                     <p class="card-text">Prix: <?= $produit[2] ?></p>
-                    <a href="detail.php?id=<?= $produit[0] ?>" class="btn btn-success btn-sm">Détail</a>
-                    <a href="#" class="btn btn-primary btn-sm">
-                        <i class="fas fa-shopping-cart"></i>Ajouter</a>
+                    <a href="../../controlleur/user/detail.php?id=<?= $produit[0] ?>" class="btn btn-success btn-sm">Détail</a>
+                    <a href="<?php echo '../../controlleur/user/ajout.php?id=' . $produit[0]; ?>"
+    
+    class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i>Ajouter</a>
                 </div>
 
 
@@ -22,9 +26,7 @@ ob_start();
     <?php } ?>
 </div>
     
-<?php
-include "footer.php";
-?>
+
     </div>
 </div>
 </body>

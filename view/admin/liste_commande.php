@@ -4,7 +4,6 @@
   if($_SESSION['privilege']!='admin')
     header('location:../../');
   ?>
-<a href="../../controlleur/admin/ajouter_produit.php" class="btn-secondary float-end btn-lg">Ajouter produit</a>
 <table class="table">
     <thead>
         <tr>
@@ -28,9 +27,7 @@
                         <td><?=$produit[1]?></td>
                         <td><?=$produit[2]?></td>
                         <td><?=$produit[3]?></td>   
-                        <td><a href="detail.php?id=<?=$produit[0]?>" class="btn btn-info btn-sm">voir detail...</a></td>
-                        <td><a href="delete.php?id=<?=$produit[0]?>" class="btn btn-danger btn-sm">supprimer</a></td>
-                        <td><a href="update.php?id=<?=$produit[0]?>" class="btn btn-dark btn-sm">Editer</a></td>
+                        <td><a href="delete_commande.php?id=<?=$produit[0]?>" class="btn btn-danger btn-sm">supprimer</a></td>
                     </tr>
                     <?php
                 }  
@@ -39,5 +36,5 @@
     </table>
     <?php
     $contenu=ob_get_clean();
-                $titre="Liste des produits";
+                $titre="Liste des commandes";
                 include "layout.php";?>

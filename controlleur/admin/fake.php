@@ -1,5 +1,5 @@
 <?php
-  include_once "../connexion.php";
+  include_once "../../modéle/connexion.php";
  
   //envoi des requéte
   $connexion=new connexion();

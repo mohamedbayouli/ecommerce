@@ -7,15 +7,12 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">E-commerce
+          <a class="nav-link active" href="../../index.php">E-commerce
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../../controlleur/user/findall.php">nos produits</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">nos catégories</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
@@ -25,19 +22,17 @@
       <ul class="navbar-nav me-left">
       
       <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Panier</a>
+          <a class="nav-link" href="../../controlleur/user/panier.php"><i class="fas fa-shopping-cart"></i>Panier</a>
         </li>
-          <a class="nav-link" href="#"><i class="fas fa-user-plus"></i>Crier un compte</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-sign-in"></i>connexion</a>
+          <a class="nav-link" href="../../view/user/newacc.php"><i class="fas fa-user-plus"></i>Créer un compte</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-sign-out"></i>déconnexion</a>
+          <a class="nav-link" href="../../view/user/connexion.php"><i class="fas fa-sign-in"></i>connexion</a>
         </li>
-        
-</ul>
-      
+        <li class="nav-item">
+          <a class="nav-link" href="../../controlleur/admin/deconnexion.php"><i class="fas fa-sign-out"></i>déconnexion</a>
+        </li>
+</ul>   
     </div>
   </div>
 </nav>
